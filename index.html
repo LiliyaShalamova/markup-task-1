@@ -28,11 +28,11 @@
         </h4>
 
         <ul>
-            <li>подготовка;
-            <li>загрузка статики (HTTP-запрос и парсинг);
-            <li>исполнение модулей;
-            <li>инициализация базовых объектов;
-            <li>отрисовка.
+            <li>подготовка;</li>
+            <li>загрузка статики (HTTP-запрос и парсинг);</li>
+            <li>исполнение модулей;</li>
+            <li>инициализация базовых объектов;</li>
+            <li>отрисовка.</li>
         </ul>
 
         <p>
@@ -40,10 +40,10 @@
         </p>
 
         <ul>
-            <li>подготовка к запросу на сервер;
-            <li>запрос данных с сервера;
-            <li>шаблонизация;
-            <li>обновление DOM.
+            <li>подготовка к запросу на сервер;</li>
+            <li>запрос данных с сервера;</li>
+            <li>шаблонизация;</li>
+            <li>обновление DOM.</li>
         </ul>
 
         <p>- <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы<br>
@@ -64,7 +64,8 @@
         </p>
 
         <p>
-            <abbr title="Application Performance Index">APDEX</abbr> - метрика, которая сразу говорит: хорошо или плохо. Метрика<br>
+            <abbr title="Application Performance Index">APDEX</abbr> - метрика, которая сразу 
+            говорит: хорошо или плохо. Метрика<br>
             работает очень просто. Мы выбираем временной интервал [0; t], такой, что если<br>
             работает очень просто. Мы выбираем временной интервал [0; t], такой, что если<br>
             интервал, (t; 4t] (в четыре раза больше первого), и считаем, что если страница<br>
@@ -104,7 +105,7 @@
         <p>
             И на сервер прилетают подобные записи:<br><br>
             <code>
-                serverResponse=50&domUpdate=60
+                serverResponse=50&#38;domUpdate=60
             </code>
         </p>
 
@@ -119,10 +120,10 @@
             </p>
 
             <ul>
-                <li>включаем gzip;
-                <li>выставляем заголовки кэширования;
-                <li>фризим CSS, JS, шаблоны и картинки;
-                <li>используем CDN;
+                <li>включаем gzip;</li>
+                <li>выставляем заголовки кэширования;</li>
+                <li>фризим CSS, JS, шаблоны и картинки;</li>
+                <li>используем CDN;</li>
             </ul>
         </div>
 
@@ -200,8 +201,10 @@
 
         <p>
             То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У<br>
-            каждого объекта есть три свойства. <var>k</var> — названия ключа в <var>localStorage</var> для этого<br>
-            ресурса. <var>p</var> — патч для ресурса, который сгенерировал vcdiff. <var>s</var> — чексумма для<br>
+            каждого объекта есть три свойства. <var>k</var> — названия ключа в <var>localStorage</var>
+            для этого<br>
+            ресурса. <var>p</var> — патч для ресурса, который сгенерировал vcdiff. <var>s</var> — 
+            чексумма для<br>
             ресурса актуальной версии, чтобы потом можно было проверить правильность<br>
             наложения патча на клиенте. Чексумма вычисляется по алгоритму Флетчера.
         </p>
@@ -217,10 +220,12 @@
             дано <var>&epsilon;</var>, <var>x<sub>0</sub></var><br>
             инициализировать <var>H<sub>0</sub></var><br>
             <var>k</var> = 0<br>
-            <strong>while</strong> ||∇f<sub>k</sub>|| > <var>&epsilon;</var><br>
+            <strong>while</strong> ||∇f<sub>k</sub>|| &#62; <var>&epsilon;</var><br>
                 найти направление p<sub>k</sub> = - C<sub>k</sub>∇f<sub>k</sub><br>
-                вычислить x<sub>k+1</sub> = x<sub>k</sub> + +α<sub>k</sub>p<sub>k</sub>, α<sub>k</sub> удовлетворяет условиям Вольфе<br>
-                обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> = ∇f<sub>k+1</sub> - ∇f<sub>k</sub><br>
+                вычислить x<sub>k+1</sub> = x<sub>k</sub> + +α<sub>k</sub>p<sub>k</sub>, α<sub>k</sub> 
+                удовлетворяет условиям Вольфе<br>
+                обозначить s<sub>k</sub> = x<sub>k+1</sub> - x<sub>k</sub> и y<sub>k</sub> = ∇f<sub>k+1
+                </sub> - ∇f<sub>k</sub><br>
                 вычислить С<sub>k+1</sub><br>
                 k = k + 1<br>
             <strong>end</strong>
@@ -281,18 +286,21 @@
             <h3>Комментарии (3):</h3>
             <article>
                 <h3>- Mogaika (<a href="mailto:mogaika@yandex-team.ru">
-                mogaika@yandex-team.ru</a>) <time datetime="2014-11-30T17:05Z">30 ноября 2014 в 17:05</time></h3>
+                mogaika@yandex-team.ru</a>) <time datetime="2014-11-30T17:05Z">30 ноября 2014 в 17:05</time>
+                </h3>
                   А можете привести сравнение, на сколько быстрее грузится lite версия?
             </article>
             <article>
                 <h3>- JIguse (<a href="mailto:mrawesome@yandex.ru">
-                mrawesome@yandex.ru</a>) <time datetime="2014-11-29T21:30Z">29 ноября 2014 в 21:30</time></h3>
+                mrawesome@yandex.ru</a>) <time datetime="2014-11-29T21:30Z">29 ноября 2014 в 21:30</time>
+                </h3>
                   Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми<br>
                   подробностями о внутренней работе сервисов.
             </article>
             <article>
                 <h3>- Brister (<a href="mailto:brist89@yandex-team.ru">
-                brist89@yandex-team.ru</a>) <time datetime="2014-11-24T13:13Z">24 ноября 2014 в 13:13</time></h3>
+                brist89@yandex-team.ru</a>) <time datetime="2014-11-24T13:13Z">24 ноября 2014 в 13:13</time>
+                </h3>
                   (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).<br>
                    Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,<br>
                    хорошо или плохо работает почта.<br><br>
@@ -302,7 +310,8 @@
                 <h3>- alexeimois (<a href="mailto:test@yandex.ru">
                 test@yandex.ru</a>) <time datetime="2014-11-22T17:35Z">22 ноября 2014 в 17:35</time></h3>
                 Мы измеряем скорость загрузки с помощью Яндекс.Метрики:<br>
-                <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a>
+                <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/
+                reports/monitoring_timing.xml</a>
             </article>
         </section>
         <footer>
